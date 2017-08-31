@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p hello to #{users}
+  span users
+  - each user in users
+    p
+      = user.firstName
+    b
+      = user.lastName
+    i
+      = user.userName
+    hr

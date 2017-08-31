@@ -3,15 +3,24 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "test": "mocha"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.2",
+    "mongoose": "^4.7.1",
     "jade": "~1.11.0",
     "morgan": "~1.8.1",
+    "query-string": "^5.0.0",
     "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "faker": "^3.1.0",
+    "mocha": "^3.2.0"
   }
 }
